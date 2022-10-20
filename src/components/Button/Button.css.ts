@@ -1,5 +1,11 @@
-import { style } from "@vanilla-extract/css"
+import { style, styleVariants } from "@vanilla-extract/css"
 import { actionColor } from '../Card/Card.css'
+import { vars } from '../../theme.css'
+
+const palette = {
+  primary: vars.colors.greys[500],
+  secondary: vars.colors.greys[700],
+}
 
 export const styles = style({
   borderRadius: 8,
@@ -8,10 +14,18 @@ export const styles = style({
   fontSize: "1em",
   fontWeight: 500,
   fontFamily: "inherit",
-  backgroundColor: "#1a1a1a",
+  backgroundColor: vars.colors.greys[700],
+  color: vars.colors.greys[200],
   cursor: "pointer",
   transition: "border-color 0.25s",
   ":hover": {
     borderColor: actionColor,
   },
 })
+
+// Either one styleVariant parameter with an object of variants
+// or two parameters with a list of variants and a function to generate the styles
+export const background = styleVariants(
+  palette,
+  (paletteColor) => ({ background: paletteColor })
+);
