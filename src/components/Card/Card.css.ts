@@ -5,7 +5,7 @@ export const actionColor = createVar() // this is a scoped variable
 
 export const styles = style({
   vars: {
-    [actionColor]: 'red',
+    [actionColor]: vars.colors.red,
   },
   borderRadius: 8,
   border: "1px solid transparent",

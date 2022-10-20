@@ -15,6 +15,8 @@ export const vars = createGlobalTheme(':root', {
       600: '#444',
       700: '#222',
     },
+    /** @deprecated don't use red please */
+    red: 'red',
   },
   space: {
     small: '.5em',

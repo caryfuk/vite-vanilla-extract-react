@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import * as React from 'react'
-import { styles, background } from './Button.css'
+import { assignInlineVars } from '@vanilla-extract/dynamic'
+import { styles, background, textColor } from './Button.css'
 
 interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
   variant: keyof typeof background;
@@ -14,6 +15,7 @@ export const Button = React.forwardRef<
     <button
       className={clsx(styles, background[variant], className)}
       ref={forwardedRef}
+      style={assignInlineVars({ [textColor]: `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})` })}
       {...restProps}
     />
   )

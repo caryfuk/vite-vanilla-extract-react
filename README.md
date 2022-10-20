@@ -9,7 +9,9 @@ Like CSS in JS but without the runtime cost.
 ```sh
 npm create vite@latest vite-vanilla-extract-react -- --template react-ts
 cd vite-vanilla-extract-react
-npm install --save-dev @vanilla-extract/vite-plugin
+npm i --save-dev @vanilla-extract/vite-plugin
+npm i @vanilla-extract/css
+npm i @vanilla-extract/dynamic
 ```
 
 And then, just edit `vite.config.ts` to use the plugin:
@@ -31,7 +33,8 @@ It was co-created by Mark Dalgleish who is also the creator of css modules. And 
 - Clean boundary between runtime and build time all that is in css.ts is build time.
 
 ### Theming
-No need to pass theme via context (theme provider) because it depends on css variables.
+- No need to pass theme via context (theme provider) because it depends on css variables.
+- Unlike css variables, we can use nested objects. This is useful for defining a theme.
 
 ### Comparison with our latest favorite - stitches
 - It has [variants](https://youtu.be/NY5uVr0tWEI?t=1662) as source of truth for types - mapToStyles function to automatically generate types for variants.

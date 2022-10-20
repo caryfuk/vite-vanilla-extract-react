@@ -1,6 +1,8 @@
-import { style, styleVariants } from "@vanilla-extract/css"
+import { createVar, style, styleVariants } from "@vanilla-extract/css"
 import { actionColor } from '../Card/Card.css'
 import { vars } from '../../theme.css'
+
+export const textColor = createVar()
 
 const palette = {
   primary: vars.colors.greys[500],
@@ -15,7 +17,7 @@ export const styles = style({
   fontWeight: 500,
   fontFamily: "inherit",
   backgroundColor: vars.colors.greys[700],
-  color: vars.colors.greys[200],
+  color: textColor,
   cursor: "pointer",
   transition: "border-color 0.25s",
   ":hover": {
