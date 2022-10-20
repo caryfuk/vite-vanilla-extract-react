@@ -1,6 +1,7 @@
 import { useState } from "react"
 import reactLogo from "./assets/react.svg"
 import { Button, Card } from "./components"
+import "./globalStyle.css"
 import "./App.css"
 
 function App() {
