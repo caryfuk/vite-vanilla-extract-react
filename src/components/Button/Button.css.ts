@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css"
-import { actionColor } from './Card.css'
+import { actionColor } from '../Card/Card.css'
 
 export const styles = style({
   borderRadius: 8,
