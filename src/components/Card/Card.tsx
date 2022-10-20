@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import * as React from 'react'
-import { styles } from './Card.css'
+import { styles, sprinkleStyles } from './Card.css'
 
 export const Card = React.forwardRef<
   HTMLDivElement, // type of the element that will be rendered
@@ -8,7 +8,7 @@ export const Card = React.forwardRef<
 >(({ className, title, children, ...restProps }, forwardedRef) => {
   return (
     <div
-      className={clsx(styles, className)}
+      className={clsx(styles, sprinkleStyles, className)}
       ref={forwardedRef}
       {...restProps}
     >

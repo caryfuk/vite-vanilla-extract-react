@@ -1,5 +1,6 @@
 import { createVar, style } from "@vanilla-extract/css"
 import { vars } from '../../theme.css'
+import { sprinkles } from '../../sprinkles.css'
 
 export const actionColor = createVar() // this is a scoped variable
 
@@ -9,7 +10,19 @@ export const styles = style({
   },
   borderRadius: 8,
   border: "1px solid transparent",
-  padding: "0.6em 1.2em",
-  backgroundColor: vars.colors.greys[600],
-  color: vars.colors.greys[200]
+})
+
+export const sprinkleStyles = sprinkles({
+  padding: {
+    mobile: 'small',
+    desktop: 'large'
+  },
+  background: {
+    lightMode: 'light',
+    darkMode: 'dark'
+  },
+  color: {
+    lightMode: 'dark',
+    darkMode: 'light'
+  },
 })

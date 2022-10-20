@@ -10,8 +10,7 @@ Like CSS in JS but without the runtime cost.
 npm create vite@latest vite-vanilla-extract-react -- --template react-ts
 cd vite-vanilla-extract-react
 npm i --save-dev @vanilla-extract/vite-plugin
-npm i @vanilla-extract/css
-npm i @vanilla-extract/dynamic
+npm i @vanilla-extract/css @vanilla-extract/sprinkles @vanilla-extract/dynamic
 ```
 
 And then, just edit `vite.config.ts` to use the plugin:
@@ -29,8 +28,9 @@ export default defineConfig({
 It was co-created by Mark Dalgleish who is also the creator of css modules. And you can see some similarities between the two. It's a bit like css modules, but with typescript as a preprocessor. Instead of writing css, you use typescript which makes it look a bit like yet another css in js library, but it’s not. The css is generated at build time.
 
 ## Random thoughts
-- With its variants and recipes, it's also a bit like tailwind, but your own tailwind that lets you define your own utility classes.
-- Clean boundary between runtime and build time all that is in css.ts is build time.
+- With its sprinkles, it's also a bit like tailwind, but your own tailwind that lets you define your own utility classes.
+- Recipes make it a bit like Stitches, but with a different syntax.
+- Clean boundary between runtime and build time - all that is in css.ts is build time.
 
 ### Theming
 - No need to pass theme via context (theme provider) because it depends on css variables.
