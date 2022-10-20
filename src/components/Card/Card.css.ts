@@ -1,4 +1,4 @@
-import { createVar, style } from "@vanilla-extract/css"
+import { createVar, globalStyle, style } from "@vanilla-extract/css"
 import { vars } from '../../theme.css'
 import { sprinkles } from '../../sprinkles.css'
 
@@ -12,8 +12,14 @@ export const styles = style({
   border: "1px solid transparent",
 })
 
-export const sprinkleStyles = sprinkles({
-  padding: {
+// If you need to target a child element, you should make it a separate component
+// If you absolutely need to do it without setting up a new component, you can do it this way
+globalStyle(`${styles} h2`, {
+  textShadow: `0 0 1rem ${vars.colors.greys[100]}`
+});
+
+export const container = sprinkles({
+  paddingX: {
     mobile: 'small',
     desktop: 'large'
   },
@@ -24,5 +30,12 @@ export const sprinkleStyles = sprinkles({
   color: {
     lightMode: 'dark',
     darkMode: 'light'
+  },
+})
+
+export const containerTitle = sprinkles({
+  paddingY: {
+    mobile: 'none',
+    desktop: 'small'
   },
 })

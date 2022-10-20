@@ -18,7 +18,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <Card>
+      <Card title="Hello from a Card">
         <Button onClick={() => setCount((count) => count + 1)} variant={ count % 2 === 0 ? 'primary' : 'secondary'}>
           count is {count}
         </Button>
