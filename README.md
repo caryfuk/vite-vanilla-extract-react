@@ -2,6 +2,8 @@
 
 [vanilla-extract](https://vanilla-extract.style/documentation/getting-started/) is a library for writing CSS in JavaScript. It is designed to be used with [React](https://reactjs.org/), but can be used with any JavaScript framework or without one.
 
+Like CSS in JS but without the runtime cost.
+
 ## Setup with Vite
 
 ```sh
@@ -22,7 +24,7 @@ export default defineConfig({
 })
 ```
 
-It was co-created by Mark Dalgleish who is also the creator of css modules. And you can see some similarities between the two. Instead of writing css, you use typescript which makes it look a bit like yet another css in js library. But it’s not. The css is generated at build time.
+It was co-created by Mark Dalgleish who is also the creator of css modules. And you can see some similarities between the two. It's a bit like css modules, but with typescript as a preprocessor. Instead of writing css, you use typescript which makes it look a bit like yet another css in js library, but it’s not. The css is generated at build time.
 
 ## Random thoughts
 - With its variants and recipes, it's also a bit like tailwind, but your own tailwind that lets you define your own utility classes.
@@ -40,3 +42,5 @@ No need to pass theme via context (theme provider) because it depends on css var
 - [Mark Dalgleish - CSS in JS: The future of styling](https://youtu.be/NY5uVr0tWEI)
 - [React Finland: Mark Dalgleish – Zero-runtime CSS-in-TypeScript with vanilla-extract](https://www.youtube.com/watch?v=23VqED_kO2Q)
 - [setup with create react app](https://sandroroth.com/blog/vanilla-extract-cra)
+- [Theming a React Application with Vanilla Extract](https://formidable.com/blog/2021/vanilla-extract/)
+- [The unseen performance costs of modern CSS-in-JS libraries in React apps](https://calendar.perfplanet.com/2019/the-unseen-performance-costs-of-css-in-js-in-react-apps/)
