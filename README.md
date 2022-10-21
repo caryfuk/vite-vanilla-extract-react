@@ -36,8 +36,8 @@ It was co-created by [Mark Dalgleish](https://twitter.com/markdalgleish) who is 
 - No need to pass theme via context (theme provider) because it depends on css variables.
 - Unlike css variables, we can use nested objects. This is useful for defining a [theme](./src/theme.css.ts).
 
-### Comparison with our latest favorite - stitches
-- Similarly to stitches, you can easily define [variants](./src/components/Button/Button.css.ts)
+### Comparison with our latest favorite - Stitches
+- Similarly to [Stitches](https://stitches.dev/), you can easily define [variants](./src/components/Button/Button.css.ts)
 - No predefined opinionated mappings to theme object using template literals. Instead, you define your own theme object and use it directly.
 - Nice autocomplete for everything, thanks to typescript and [CSSType](https://www.npmjs.com/package/csstype).
 
