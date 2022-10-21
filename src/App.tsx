@@ -1,6 +1,6 @@
 import { useState } from "react"
 import reactLogo from "./assets/react.svg"
-import { Button, Card } from "./components"
+import { Button, Card, Title } from "./components"
 import "./globalStyle.css"
 import "./App.css"
 
@@ -20,7 +20,7 @@ function App() {
           <img src="/react-alpha.png" className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1><a href="https://www.salsitasoft.com" target="_blank">Salsita</a> ❤️ <a href="https://vanilla-extract.style/" target="_blank">Vanilla-Extract</a> + <a href="https://vitejs.dev" target="_blank">Vite</a> + <a href="https://reactjs.org" target="_blank">React</a></h1>
+      <Title><a href="https://www.salsitasoft.com" target="_blank">Salsita</a> ❤️ <a href="https://vanilla-extract.style/" target="_blank">Vanilla-Extract</a> + <a href="https://vitejs.dev" target="_blank">Vite</a> + <a href="https://reactjs.org" target="_blank">React</a></Title>
       <Card title="Hello from a Card">
         <Button onClick={() => setCount((count) => count + 1)} variant={ count % 2 === 0 ? 'primary' : 'secondary'}>
           count is {count}

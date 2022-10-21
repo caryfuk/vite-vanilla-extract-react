@@ -17,7 +17,7 @@
 
 a {
   font-weight: 500;
-  color: #eee;
+  color: #999;
   text-decoration: inherit;
 }
 
@@ -31,11 +31,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 2em;
-  line-height: 1.1;
 }
 
 @media (prefers-color-scheme: light) {

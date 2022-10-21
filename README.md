@@ -27,7 +27,7 @@ export default defineConfig({
 
 ## Random thoughts
 - With its sprinkles, it's also a bit like tailwind, but your own tailwind that lets you define your own [utility classes](./src/sprinkles.css.ts).
-- Recipes make it a bit like Stitches, but with a different syntax.
+- [Recipes](./src/components/Title/Title.css.ts) make it a bit like Stitches, but with a different syntax.
 - Clean boundary between runtime and build time - all that is in css.ts is build time. But you can still call css functions from runtime code.
 
 ### 💅 Theming
