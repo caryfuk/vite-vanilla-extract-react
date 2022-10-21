@@ -27,7 +27,8 @@ globalStyle(`${styles} h2`, {
 export const container = sprinkles({
   paddingX: {
     mobile: 'small',
-    desktop: 'large'
+    desktop: 'large',
+    tablet: 'medium'
   },
   background: {
     lightMode: 200,
