@@ -9,9 +9,7 @@ const space = {
   ...vars.space
 };
 
-const colors = {
-  ...vars.colors.greys
-}
+const colors = vars.colors.greys
 
 const responsiveProperties = defineProperties({
   conditions: {
