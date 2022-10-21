@@ -10,7 +10,7 @@ Vanilla-extract was co-created by [Mark Dalgleish](https://twitter.com/markdalgl
 npm create vite@latest vite-vanilla-extract-react -- --template react-ts
 cd vite-vanilla-extract-react
 npm i --save-dev @vanilla-extract/vite-plugin
-npm i @vanilla-extract/css @vanilla-extract/sprinkles @vanilla-extract/dynamic
+npm i @vanilla-extract/css @vanilla-extract/sprinkles @vanilla-extract/dynamic @vanilla-extract/recipes
 ```
 
 And then, just edit `vite.config.ts` to use the plugin:
