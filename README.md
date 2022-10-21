@@ -25,19 +25,19 @@ export default defineConfig({
 })
 ```
 
-It was co-created by Mark Dalgleish who is also the creator of css modules. And you can see some similarities between the two. It's a bit like css modules, but with typescript as a preprocessor. Instead of writing css, you use typescript which makes it look a bit like yet another css in js library, but it’s not. The css is generated at build time.
+It was co-created by [Mark Dalgleish](https://twitter.com/markdalgleish) who is also the creator of css modules. And you can see some similarities between the two. It's a bit like css modules, but with typescript as a preprocessor. Instead of writing css, you use typescript which makes it look a bit like yet another css in js library, but it’s not. The css is generated at build time.
 
 ## Random thoughts
-- With its sprinkles, it's also a bit like tailwind, but your own tailwind that lets you define your own utility classes.
+- With its sprinkles, it's also a bit like tailwind, but your own tailwind that lets you define your own [utility classes](./src/sprinkles.css.ts).
 - Recipes make it a bit like Stitches, but with a different syntax.
-- Clean boundary between runtime and build time - all that is in css.ts is build time.
+- Clean boundary between runtime and build time - all that is in css.ts is build time. But you can still call css functions from runtime code.
 
 ### Theming
 - No need to pass theme via context (theme provider) because it depends on css variables.
-- Unlike css variables, we can use nested objects. This is useful for defining a theme.
+- Unlike css variables, we can use nested objects. This is useful for defining a [theme](./src/theme.css.ts).
 
 ### Comparison with our latest favorite - stitches
-- It has [variants](https://youtu.be/NY5uVr0tWEI?t=1662) as source of truth for types - mapToStyles function to automatically generate types for variants.
+- Similarly to stitches, you can easily define [variants](./src/components/Button/Button.css.ts)
 - No predefined opinionated mappings to theme object using template literals. Instead, you define your own theme object and use it directly.
 - Nice autocomplete for everything, thanks to typescript and [CSSType](https://www.npmjs.com/package/csstype).
 
